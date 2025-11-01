@@ -49,7 +49,7 @@ public class DadosPessoais extends JPanel {
     private JButton btnSalvar;    // Botão de Salvar (Edição)
 
     // ===================================
-    // CONSTRUTOR CORRETO
+      // Construtor ---
     // ===================================
     public DadosPessoais(JFrame framePai, int idAluno) {
         this.framePai = framePai;
@@ -68,18 +68,18 @@ public class DadosPessoais extends JPanel {
     // LAYOUT E COMPONENTES
     // ===================================
     private void setupLayout() {
-        // 1. Configuração do Painel Principal (do seu esqueleto)
+        // 1. Configuração do Painel Principal (do esqueleto)
         setLayout(new BorderLayout(10, 10));
         setBorder(new EmptyBorder(15, 15, 15, 15)); 
         
-        // 2. Título (do seu esqueleto)
+        // 2. Título (do esqueleto)
         String titulo = (idAluno > 0) ? "EM EDIÇÃO: Dados Pessoais do Aluno ID: " + idAluno : "CADASTRAR NOVO ALUNO";
         JLabel lblTitulo = new JLabel(titulo);
         lblTitulo.setFont(new Font("Tahoma", Font.BOLD, 20));
         lblTitulo.setHorizontalAlignment(SwingConstants.CENTER);
         add(lblTitulo, BorderLayout.NORTH);
         
-        // --- 3. Painel de Conteúdo (FORMULÁRIO INSERIDO AQUI) ---
+        // --- 3. Painel de Conteúdo ---
         JPanel pnlConteudo = new JPanel();
         pnlConteudo.setBackground(new Color(230, 230, 230)); // Cor de fundo cinza claro
         
